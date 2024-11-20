@@ -1,0 +1,21 @@
+.footer{
+    background-color: var(--GrayColor);
+    height: auto;
+    text-align: center;
+    width: 100vw;
+    & #logo{
+        width: 5vw;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    & .socialmedia{
+
+        
+        & img{
+            width: 25px;
+            height: auto;
+            margin: 20px;
+        }
+    }
+}

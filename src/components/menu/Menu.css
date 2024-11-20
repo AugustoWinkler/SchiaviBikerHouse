@@ -1,0 +1,88 @@
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--GrayColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-bottom: 3px solid var(--WhiteColor);
+ 
+    & #logo {
+        width: 70px;
+        height: auto;
+        margin-right: 10vw;
+    }
+
+    & ul{
+        display: flex;
+        gap: 40px;
+
+        & li{
+            list-style: none;
+            & a{
+                color: var(--WhiteColor);
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                font-size: 1.1em;
+                text-decoration: none;
+            }
+            & a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    & .socialmedia{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        gap: 10px;
+        & a img{
+            width: 25px;
+            height: auto;
+        }
+        & a:hover{
+            scale: 1.2;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.menu-button {
+    font-size: 2em;
+    position: absolute;
+    background: none;
+    border: none;
+    color: var(--WhiteColor);
+    cursor: pointer;
+    display: none; /* Esconde o botão no desktop */
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block; /* Mostra o botão no mobile */
+    }
+
+    .menu {
+        display: none; /* Esconde o menu no mobile por padrão */
+        flex-direction: column;
+        background-color: var(--DarkBlack);
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu.open {
+        display: flex; /* Mostra o menu quando aberto */
+    }
+
+
+}

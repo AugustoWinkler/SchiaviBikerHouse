@@ -1,0 +1,19 @@
+/*Global Definition for Colors*/
+:root{
+  --GrayColor: #242424;
+  --DarkBlack: #000000;
+  --BackGroundColor: #141b21;
+  --MainColor: #ff6a00;
+  --WhiteColor: #fefefe;
+  --LightBackGroundColor: #fff8ee;
+}
+/*Global Removing Padding and Margin*/
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Page Background*/
+.App{
+  background-color: var(--BackGroundColor);
+  
+}
