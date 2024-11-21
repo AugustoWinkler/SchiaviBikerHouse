@@ -16,7 +16,7 @@ const Menu = () => {
                         &#9776;
                 </button>
             <div className="menu-logo">
-                <img id="logo" src="public/assets/SchiaviBikerHouseLogo.png" alt="Schiavi Biker House Shield" />
+                <img id="logo" src="/assets/SchiaviBikerHouseLogo.png" alt="Schiavi Biker House Shield" />
                 
             </div>
             <div className={`menu ${isOpen ? "open" : ""}`}>
@@ -27,8 +27,8 @@ const Menu = () => {
                 </ul>
             </div>
             <div className="socialmedia">
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511973791109&text&type=phone_number&app_absent=0"><img src="public/assets/Whatsapplogo.png" alt="" /></a>
-            <a target="_blank" href="https://www.instagram.com/schiavibikerhouse/"><img src="public/assets/Instagramlogo.png" alt="" /></a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511973791109&text&type=phone_number&app_absent=0"><img src="/assets/Whatsapplogo.png" alt="" /></a>
+            <a target="_blank" href="https://www.instagram.com/schiavibikerhouse/"><img src="/assets/Instagramlogo.png" alt="" /></a>
             </div>
         </div>
             
