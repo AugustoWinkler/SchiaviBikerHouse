@@ -2,7 +2,7 @@
 .mainposter{
     width: 100vw;
     height: 60vh;
-    background-image: url('src/assets/Backgroundimage.jpg');
+    background-image: url('public/assets/Backgroundimage.jpg');
     background-size: cover;
     transform: scaleX(-1);
 
