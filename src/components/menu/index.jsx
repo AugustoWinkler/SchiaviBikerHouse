@@ -12,22 +12,23 @@ const Menu = () => {
         <>
             
         <div className="header">
-            <div>
-                <img id="logo" src="src/assets/SchiaviBikerHouseLogo.png" alt="Schiavi Biker House Shield" />
                 <button className="menu-button" onClick={toggleMenu}>
                         &#9776;
                 </button>
+            <div className="menu-logo">
+                <img id="logo" src="src/assets/SchiaviBikerHouseLogo.png" alt="Schiavi Biker House Shield" />
+                
             </div>
             <div className={`menu ${isOpen ? "open" : ""}`}>
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#scrollService">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
             <div className="socialmedia">
-                <a><img src="src/assets/Whatsapplogo.png" alt="" /></a>
-                <a><img src="src/assets/Instagramlogo.png" alt="" /></a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511973791109&text&type=phone_number&app_absent=0"><img src="src/assets/Whatsapplogo.png" alt="" /></a>
+            <a target="_blank" href="https://www.instagram.com/schiavibikerhouse/"><img src="src/assets/Instagramlogo.png" alt="" /></a>
             </div>
         </div>
             

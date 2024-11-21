@@ -1,0 +1,23 @@
+.container{
+    border-radius: 15px;
+    border: 1px solid black;
+    background-size: cover;
+    
+    width: 20vw;
+    height: 50vh;
+    & h1{
+        font-size: 0.8em;
+        
+        color: var(--WhiteColor);
+        padding-top: 40vh;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .container{
+     width: 70vw;
+     height: 30vh;
+    }
+ 
+ }

@@ -1,41 +1,30 @@
-import React, { useEffect } from "react";
+import React from "react";
+import './Contact.css'
+
+
 
 const Contact = () => {
-    useEffect(() => {
-        // Carrega o script do Instagram após o componente ser montado
-        const script = document.createElement("script");
-        script.src = "https://www.instagram.com/embed.js";
-        script.async = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script); // Remove o script ao desmontar o componente
-        };
-    }, []);
-
     return (
-        <div style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            minHeight: "100vh", // Preenche toda a altura da tela
-            padding: "20px",
-            textAlign: "center",
-        }}>
-            <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/schiavibikerhouse/"
-                data-instgrm-version="12"
-                style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "10px auto",
-                    maxWidth: "540px",
-                    padding: "0",
-                }}
-            ></blockquote>
+        <>
+        <h1 id="contato">Contato</h1>
+        <div className="contact">
+            <div className="contactinfo">
+                <p>Tel: +55 (11) 5464-6199</p>
+                <p>Cel: +55 (11) 97379-1109</p>
+                <p>Email: schiavibikerhouse@gmail.com</p>
+                <p>Endr: Av. Ver. Narciso Yague Guimarães, 224, Mogi das Cruzes 08780500</p>
+            </div>
+            <div className="functionhour">
+                <pre>Domingo:            Fechado</pre>
+                <pre>Segunda-feira:      08:00 – 18:00</pre>
+                <pre>Terça-feira:        08:00 – 18:00</pre>
+                <pre>Quarta-feira:       08:00 – 18:00</pre>
+                <pre>Quinta-feira:       08:00 – 18:00</pre>
+                <pre>Sexta-feira:        08:00 – 18:00</pre>
+                <pre>Sábado:             08:00 – 13:00</pre>
+            </div>
         </div>
+        </>
     );
 };
 

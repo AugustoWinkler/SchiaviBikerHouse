@@ -67,21 +67,20 @@
 @media (max-width: 768px) {
     .menu-button {
         display: block; /* Mostra o botão no mobile */
+        width: 50vw;
     }
 
     .menu {
+        z-index: 2;
         display: none; /* Esconde o menu no mobile por padrão */
-        flex-direction: column;
-        background-color: var(--DarkBlack);
         position: absolute;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
+        top: 110px;
+        
     }
 
+
     .menu.open {
-        display: flex; /* Mostra o menu quando aberto */
+        display: block;
     }
 
 

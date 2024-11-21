@@ -1,0 +1,48 @@
+#contato{
+    color: var(--GrayColor);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.contact{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 70vw;
+    gap: 20vw;
+
+
+    & .contactinfo{
+
+        
+        width: 70vw;
+        color: var(--GrayColor);
+        padding: 50px;
+
+    }
+
+    & .functionhour{
+        padding: 40px;
+        width: 70vw;
+        color: var(--GrayColor);
+        & pre{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+    }
+    
+
+
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 100vw;
+        display: block;
+        & .contactinfo{
+            width: 70vw;
+        }
+    }
+}
